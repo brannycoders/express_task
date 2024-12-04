@@ -16,13 +16,13 @@ app.get('/about', (req, res) => {
 
 app.get('/greet/:Nathaniel', (req, res) => {
     const { name } = req.params;
-    res.send(`Hello, ${Nathaniel}!`);
+    res.send(`Hello, ${name}!`);
 });
 
 app.get('/api/users', (req, res) => {
     const users = [
-        { id: 1, name: 'User 1' },
-        { id: 2, name: 'User 2' },
+        { id: 1, user: 'User 1' },
+        { id: 2, user: 'User 2' },
     ];
     res.json(users);
 });
